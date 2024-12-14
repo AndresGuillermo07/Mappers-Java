@@ -1,4 +1,4 @@
-package OrikaMapper.entities;
+package MapStruct.entities;
 
 import lombok.NoArgsConstructor;
 
