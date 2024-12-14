@@ -1,8 +1,9 @@
-package ModelMapper.dto;
+package OrikaMapper.entities;
 
-import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class PersonDefaultDto {
+@NoArgsConstructor
+public class PersonEntity {
 
     private Long id;
     private String name;
@@ -11,16 +12,13 @@ public class PersonDefaultDto {
     private Integer age;
     private Character gender;
 
-    public PersonDefaultDto(Long id, String name, String surname, String email, Integer age, Character gender) {
+    public PersonEntity(Long id, String name, String surname, String email, Integer age, Character gender) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.age = age;
         this.gender = gender;
-    }
-
-    public PersonDefaultDto() {
     }
 
     public Long getId() {
@@ -73,7 +71,7 @@ public class PersonDefaultDto {
 
     @Override
     public String toString() {
-        return "PersonDefaultDto{" +
+        return "PersonEntity{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +

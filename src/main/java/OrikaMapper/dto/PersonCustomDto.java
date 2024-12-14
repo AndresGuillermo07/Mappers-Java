@@ -1,4 +1,4 @@
-package ModelMapper.dto;
+package OrikaMapper.dto;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ public class PersonCustomDto {
     private String nameDto;
     private String surnameDto;
     private String emailDto;
-    private byte ageDto;
+    private Integer ageDto;
     private Character genderDto;
 
     public Long getIdDto() {
@@ -44,11 +44,11 @@ public class PersonCustomDto {
         this.emailDto = emailDto;
     }
 
-    public byte getAgeDto() {
+    public Integer getAgeDto() {
         return ageDto;
     }
 
-    public void setAgeDto(byte ageDto) {
+    public void setAgeDto(Integer ageDto) {
         this.ageDto = ageDto;
     }
 
