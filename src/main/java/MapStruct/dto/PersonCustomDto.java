@@ -1,4 +1,4 @@
-package OrikaMapper.dto;
+package MapStruct.dto;
 
 import lombok.Data;
 
